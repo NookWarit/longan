@@ -28,13 +28,17 @@ class Master extends Component {
         <Header>
           <Left>
             <Button transparent>
-              <Icon name="menu" />
+              <Icon name='menu' />
             </Button>
           </Left>
           <Body>
             <Title>Header</Title>
           </Body>
-          <Right />
+          <Right>
+            <Button transparent>
+              <Icon name='contact' />
+            </Button>
+          </Right>
         </Header>
         <Content>{this.props.children}</Content>
         <Footer>

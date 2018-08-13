@@ -4,6 +4,8 @@ export default class Login extends React.Component {
   
     static navigationOptions = {
       title: 'Login!',
+      header: null
+      
     };
 
     state = { email: '', password: '', errorMessage: null }
@@ -38,7 +40,7 @@ export default class Login extends React.Component {
         <Button title="Login" onPress={() => this.props.navigation.navigate('Main')} />
         <Button
           title="Don't have an account? Sign Up"
-          onPress={() => this.props.navigation.navigate('Signup')}
+          onPress={() => this.props.navigation.navigate('Home')}
         />
       </View>
     )
