@@ -20,7 +20,7 @@ import {
       Login: Login,
       Signup: Signup,
       Main: Master,
-      // Home: Home,
+      Home: Home,
       // New: New,
       // His: His,
       // Noti: Noti,
@@ -32,7 +32,7 @@ import {
       
     },
     {
-      initialRouteName: 'Login',
+      initialRouteName: 'First',
     }
   );
  

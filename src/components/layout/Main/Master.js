@@ -46,7 +46,7 @@ class Master extends Component {
             <Button active badge vertical>
               <Badge><Text>2</Text></Badge>
               <Icon active name="home" />
-              {/* <Text>หน้าแรก</Text> */}
+              onPress={() => this.props.navigation.navigate('Home')}
             </Button>
             <Button vertical>
               <Icon name="document" />
