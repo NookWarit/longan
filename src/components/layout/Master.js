@@ -19,37 +19,31 @@ class Master extends Component {
     super(props);
     this.state = {};
   }
-  static navigationOptions = {
-    header: null
- };
   render() {
     return (
       <Container>
         <Header>
           <Left>
             <Button transparent>
-              <Icon name='menu' />
+              <Icon name="menu" />
             </Button>
           </Left>
           <Body>
             <Title>Header</Title>
           </Body>
-          <Right>
-            <Button transparent>
-              <Icon name='contact' />
-            </Button>
-          </Right>
+          <Right />
         </Header>
         <Content>{this.props.children}</Content>
         <Footer>
         <FooterTab>
-            <Button active badge vertical>
+            <Button  badge vertical>
               <Badge><Text>2</Text></Badge>
-              <Icon active name="home" />
+              <Icon  name="home" />
               onPress={() => this.props.navigation.navigate('Home')}
             </Button>
-            <Button vertical>
-              <Icon name="document" />
+            <Button active vertical>
+              <Icon active name="document" />
+              onPress={() => this.props.navigation.navigate('Tab')}
               {/* <Text>ข่าวสาร</Text> */}
             </Button>
             <Button vertical>

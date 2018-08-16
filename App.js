@@ -7,11 +7,12 @@ import {
   } from 'react-native';
   import { createStackNavigator } from 'react-navigation';
 
-  import First from "./src/components/layout/First";
-  import Login from "./src/components/layout/Login";
-  import Signup from "./src/components/layout/Signup";
-  import Master from "./src/components/layout/Main/Master";
-  import Home from "./src/components/layout/Home";
+  import First from "./src/components/First";
+  import Login from "./src/components/Login";
+  import Signup from "./src/components/Signup";
+  import Home from "./src/components/Home";
+  import New from "./src/components/New";
+  import Tab from "./src/components/Tab";
 
 
   const RootStack = createStackNavigator(
@@ -19,10 +20,9 @@ import {
       First: First,
       Login: Login,
       Signup: Signup,
-      Main: Master,
       Home: Home,
-      // New: New,
-      // His: His,
+      New: New,
+      Tab: Tab,
       // Noti: Noti,
       // Seti: Seti,
       // Chat: Chat,
